@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <style>
+        body{
+            background-color:cornflowerblue;
+        }
+        .wrapper {
+            background-color: #3368c4;
+            border: 1px solid cornflowerblue;
+            border-radius: 50%;
+            position: absolute;
+            margin: 15%;
+            height: 400px;
+            width: 350px;
+            display: inline-flex;
+            box-shadow: -13px -3px 15px 2px #3368c4;
+        }
+        #eyeleft{
+            position:absolute;
+            height:200px;
+            width:175px;
+            background-color:white;
+            border-radius:50%;
+            box-shadow:inset 14px ;
+            margin-top:50px;
+            margin-left:-20px;
+            align-content:center;
+
+        }
+        #lefteye1 {
+            position: absolute;
+            height: 160px;
+            width: 140px;
+            background-color: deeppink;
+            border-radius: 50%;
+            margin-left: 35px;
+            margin-top: 20px;
+        }
+        #lefteye2 {
+            position: absolute;
+            height: 125px;
+            width: 100px;
+            background-color: black;
+            border-radius: 50%;
+            margin-left: 40px;
+            margin-top: 15px;
+        }
+        #inleft {
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            background-color: white;
+            border-radius: 50%;
+            margin-left: 65px;
+            margin-top: 15px;
+        }
+        #eyeright {
+            position: absolute;
+            height: 200px;
+            width: 175px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: inset 14px;
+            margin-top: 50px;
+            margin-left: 205px;
+            align-content:center;
+        }
+        #eyeright1 {
+            position: absolute;
+            height: 160px;
+            width: 140px;
+            background-color: deeppink;
+            border-radius: 50%;
+            margin-top: 20px;
+            margin-right: -100px;
+        }
+        #eyeright2 {
+            position: absolute;
+            height: 125px;
+            width: 100px;
+            background-color: black;
+            border-radius: 50%;
+            margin-right: -40px;
+            margin-top: 15px;
+        }
+        #inright {
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            background-color: white;
+            border-radius: 50%;
+            margin-left: 65px;
+            margin-top: 15px;
+        }
+        #mouth {
+            margin-top: 275px;
+            background-color: black;
+            height: 40px;
+            width: 125px;
+            margin-left: 120px;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            align-content:center;
+            text-align:center;
+        }
+        #top {
+            background-color: white;
+            height: 15px;
+            width: 60px;
+            margin-left: 30px;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        #bottom {
+            margin-top: 10px;
+            background-color: red;
+            height: 15px;
+            width: 80px;
+            margin-left: 25px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        #intail {
+            background-color: black;
+            border: 1px solid cornflowerblue;
+            position: absolute;
+            margin: 14%;
+            height: 100px;
+            width: 200px;
+            display: inline-flex;
+            border-bottom-right-radius: -30px;
+            border-bottom-left-radius: -30px;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            transform: rotate(-30deg);
+        }
+        #outtail {
+            background-color: yellow;
+            border: 1px solid cornflowerblue;
+            position: absolute;
+            margin-left:220px;
+            margin-top:200px;
+            height: 120px;
+            width: 200px;
+            border-bottom-right-radius:30px;
+            border-bottom-left-radius: 30px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            transform: rotate(-30deg);
+        }
+        #lhand {
+            background-color: yellow;
+            border: 1px solid cornflowerblue;
+            position: absolute;
+            margin-left: 100px;
+            margin-top: 550px;
+            height: 80px;
+            width: 200px;
+            border-bottom-right-radius: 40%;
+            border-bottom-left-radius: 50px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 80%;
+            transform: rotate(180deg);
+        }
+        #linhand {
+            background-color: black;
+            border: 1px solid cornflowerblue;
+            position: absolute;
+            height: 80px;
+            width: 120px;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 50%;
+            border-top-right-radius: 30px;
+            transform: rotate(180deg);
+        }
+        #lmhand {
+            background-color: #3368c4;
+            border: 1px solid cornflowerblue;
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 50px;
+            border-top-right-radius: 30px;
+            transform: rotate(180deg);
+        }
+        #rhand {
+            background-color: yellow;
+            border: 1px solid cornflowerblue;
+            position: absolute;
+            margin-left: 550px;
+            margin-top: 550px;
+            height: 80px;
+            width: 200px;
+            border-bottom-left-radius: 60%;
+            border-bottom-right-radius: 30px;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 80%;
+            transform: rotate(180deg);
+        }
+        #rinhand {
+            background-color: black;
+            border: 1px solid cornflowerblue;
+            position: absolute;
+            height: 80px;
+            width: 120px;
+            margin-left:75px;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 30px;
+            border-top-left-radius: 30px;
+            transform: rotate(180deg);
+        }
+        #rmhand {
+            background-color: #3368c4;
+            border: 1px solid cornflowerblue;
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            margin-left: 120px;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-top-left-radius: 20px;
+            transform: rotate(180deg);
+        }
+        #pic{
+            width:100%;
+            display:flex;
+            align-items:center;
+            justify-content:space-around;
+            position:absolute;
+            bottom:0;
+        }
+        img{
+            width:50px;
+            animation:bubble 6s linear infinite;
+        }
+        @keyframes bubble{
+            0%{
+                transform:translateY(0);
+                opacity:0;
+            }
+            50% {
+                opacity: 1;
+            }
+            70% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-80vh);
+                opacity: 0;
+            }
+        }
+        img:nth-child(1){
+            animation-delay:2s;
+        }
+        img:nth-child(2) {
+            animation-delay: 1s;
+        }
+        img:nth-child(3) {
+            animation-delay: 4s;
+        }
+        img:nth-child(4) {
+            animation-delay: 3.5s;
+        }
+        img:nth-child(5) {
+            animation-delay: 5s;
+        }
+        img:nth-child(6) {
+            animation-delay: 7s;
+        }
+        img:nth-child(7) {
+            animation-delay: 6s;
+        }    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="pic">
+            <img src="pic/bubble.png" />
+            <img src="pic/bubble.png" />
+            <img src="pic/bubble.png" />
+            <img src="pic/bubble.png" />
+            <img src="pic/bubble.png" />
+            <img src="pic/bubble.png" />
+            <img src="pic/bubble.png" />
+        </div>
+        <div>
+
+            <div id="outtail">
+
+            </div>
+            <div id="intail">
+
+            </div>
+        </div>
+        <div class="wrapper position-absolute">
+            <div id="eyeleft">
+                <div id="lefteye1">
+                    <div id="lefteye2">
+                        <div id="inleft">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="eyeright">
+                <div id="eyeright1">
+                    <div id="eyeright2">
+                        <div id="inright">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mouth">
+                <div id="top">
+
+                </div>
+                <div id="bottom">
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="lhand">
+                <div id="linhand">
+
+                </div>
+                <div id="lmhand">
+
+                </div>
+            </div>
+            <div id="rhand">
+                <div id="rinhand">
+
+                </div>
+                <div id="rmhand">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="Scripts/jquery-3.0.0.js"></script>
+    <script src="Scripts/popper.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+</body>
+</html>
